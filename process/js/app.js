@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+//working wih state
 var MainInterface = React.createClass({
 	getInitialState: function(){
 		return {
