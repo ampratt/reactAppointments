@@ -1,12 +1,16 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var _ = require('lodash');
+
 var AptList = require('./AptList');
+var AddAppointment = require('./AddAppointment');
+
 
 var MainInterface = React.createClass({
   getInitialState: function() {
     return {
-      myAppointments: []
+    	aptBodyVisible: false, 
+      	myAppointments: []
     } //return
   }, //getInitialState
 
@@ -34,6 +38,14 @@ var MainInterface = React.createClass({
   	}); // setstate
   }, //delete message
 
+  //control state change to modify state variable
+  toggleAddDisplay: function(){
+  	var tempVisibility = !this.state.aptBodyVisible;
+  	this.setState({
+  		aptBodyVisible: tempVisibility
+  	}); //setState
+  }, //toggleAddDisplay
+
   render: function() {
     var filteredApts = this.state.myAppointments;
     filteredApts = filteredApts.map(function(item, index) {
@@ -46,6 +58,10 @@ var MainInterface = React.createClass({
     }.bind(this)); //filteredApts.map
     return (
       <div className="interface">
+      <AddAppointment 
+      		bodyVisible = { this.state.aptBodyVisible }
+      		handleToggle = { this.toggleAddDisplay }
+	    />
         <ul className="item-list media-list">{filteredApts}</ul>
       </div>
     ) //return
