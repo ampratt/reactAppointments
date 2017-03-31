@@ -23,11 +23,12 @@ var AptList = React.createClass({
 	            <div className="owner-name"><span className="label-item">Participants: </span>
 					{participants.map((person, index) =>
 						(participants.indexOf(person) === (participants.length-1)) ?
-							<span>{person}</span>:
-							<span>{person}, </span>
+							<span key={index}>{person}</span>:
+							<span key={index}>{person}, </span>
 					)}
 	            </div>
-	            <div className="apt-notes">{this.props.singleItem.aptNotes}</div>
+	            <div className="apt-notes"><span>Description: </span>
+	            	{this.props.singleItem.aptNotes}</div>
 	          </div>
 	        </li>
 		)//return

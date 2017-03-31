@@ -64,10 +64,10 @@ var AddAppointment = React.createClass({
 
 	            </div>
 	            <div className="form-group">
-	              <label className="col-sm-2 control-label" for="aptNotes">Apt. Notes</label>
+	              <label className="col-sm-2 control-label" for="aptNotes">Description</label>
 	              <div className="col-sm-10">
 	                <textarea className="form-control" rows="4" cols="50"
-	                  id="aptNotes" ref="inputAptNotes" placeholder="Appointment Notes"></textarea>
+	                  id="aptNotes" ref="inputAptNotes" placeholder="Description"></textarea>
 	              </div>
 	            </div>
 	            <div className="form-group">
@@ -78,8 +78,8 @@ var AddAppointment = React.createClass({
 	          </form>
 	        </div>
 	      </div>
-	    )//return
+	    ) //return
     } //render
 }); // AddAppointment
 
-module.exports = AddAppointment;
+module.exports = AddAppointment
