@@ -1,25 +1,25 @@
 [
   {
     "aptTitle": "Staff Meeting",
-    "participants": ["Aaron Pratt", "Hassum Harrod", "Joe Namath"],
+    "participants": "Aaron Pratt, Joe Namath, Jill",
     "aptDate": "2016-06-20 15:30",
     "aptNotes": "morning scrum meeting"
   },
   {
     "aptTitle": "Planning Event",
-    "participants": ["Constance Smith", "Jill Namath", "Aaron Pratt"],
+    "participants": "Constance Smith, Aaron Pratt",
     "aptDate": "2016-06-24 08:30",
     "aptNotes": "need to plan the big upcomign event"
   },
   {
     "aptTitle": "Dentist",
-    "participants": ["Aaron Pratt"],
+    "participants": "Aaron Pratt",
     "aptDate": "2016-06-22 15:50",
     "aptNotes": "ouch. bummer"
   },
   {
     "aptTitle": "Coffee Break",
-    "participants": ["Hillary Goldwyn", "Jane Namath"],
+    "participants": "Hillary Goldwyn, Jane Namath",
     "aptDate": "2016-06-21 9:15",
     "aptNotes": "Gott get some coffee to keep going"
   }
