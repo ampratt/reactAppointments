@@ -10,8 +10,8 @@ var AddAppointment = React.createClass({
 
 	handleAdd: function(e) {
 		var tempItem = {
-		  petName: this.refs.inputPetName.value,
-		  ownerName: this.refs.inputOwnerName.value,
+		  aptTitle: this.refs.inputAptTitle.value,
+		  participants: this.refs.inputParticipants.value,
 		  aptDate: this.refs.inputAptDate.value + ' ' +
 		    this.refs.inputAptTime.value,
 		  aptNotes: this.refs.inputAptNotes.value
@@ -37,17 +37,17 @@ var AddAppointment = React.createClass({
 	          <form className="add-appointment form-horizontal"
 	          onSubmit={ this.handleAdd }>
 	            <div className="form-group">
-	              <label className="col-sm-2 control-label" for="petName">Pet Name</label>
+	              <label className="col-sm-2 control-label" for="aptTitle">Title</label>
 	              <div className="col-sm-10">
 	                <input type="text" className="form-control"
-	                  id="petName" ref="inputPetName" placeholder="Pet's Name" />
+	                  id="aptTitle" ref="inputAptTitle" placeholder="Appointment Title" />
 	              </div>
 	            </div>
 	            <div className="form-group">
-	              <label className="col-sm-2 control-label" for="petOwner">Pet Owner</label>
+	              <label className="col-sm-2 control-label" for="participants">Participants</label>
 	              <div className="col-sm-10">
 	                <input type="text" className="form-control"
-	                  id="petOwner" ref="inputOwnerName" placeholder="Owner's Name" />
+	                  id="participants" ref="inputParticipants" placeholder="Participants" />
 	              </div>
 	            </div>
 	            <div className="form-group">

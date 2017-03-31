@@ -10,7 +10,7 @@ var MainInterface = React.createClass({
   getInitialState: function() {
     return {
     	aptBodyVisible: false, 
-      orderBy: 'petName',
+      orderBy: 'aptTitle',
       orderDir: 'asc',
       queryText: '',
       	myAppointments: []
@@ -82,8 +82,8 @@ var MainInterface = React.createClass({
 
     myAppointments.forEach(function(item) {
       if(
-        (item.petName.toLowerCase().indexOf(queryText)!=-1) ||
-        (item.ownerName.toLowerCase().indexOf(queryText)!=-1) ||
+        (item.aptTitle.toLowerCase().indexOf(queryText)!=-1) ||
+        (item.participants.toLowerCase().indexOf(queryText)!=-1) ||
         (item.aptDate.toLowerCase().indexOf(queryText)!=-1) ||
         (item.aptNotes.toLowerCase().indexOf(queryText)!=-1)
       ) {
@@ -129,5 +129,5 @@ var MainInterface = React.createClass({
 
 ReactDOM.render(
   <MainInterface />,
-  document.getElementById('petAppointments')
+  document.getElementById('appointments')
 ); //render

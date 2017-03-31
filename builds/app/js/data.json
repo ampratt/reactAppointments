@@ -1,26 +1,26 @@
 [
   {
-    "petName": "Buffy",
-    "ownerName": "Hassum Harrod",
+    "aptTitle": "Staff Meeting",
+    "participants": ["Aaron Pratt", "Hassum Harrod", "Joe Namath"],
     "aptDate": "2016-06-20 15:30",
-    "aptNotes": "This Chihuahua has not eaten for three days and is lethargic"
+    "aptNotes": "morning scrum meeting"
   },
   {
-    "petName": "Spot",
-    "ownerName": "Constance Smith",
+    "aptTitle": "Planning Event",
+    "participants": ["Aaron Pratt", "Constance Smith", "Jill Namath"],
     "aptDate": "2016-06-24 08:30",
-    "aptNotes": "This German Shepherd is having some back pain"
+    "aptNotes": "need to plan the big upcomign event"
   },
   {
-    "petName": "Goldie",
-    "ownerName": "Barot Bellingham",
+    "aptTitle": "Dentist",
+    "participants": ["Aaron Pratt"],
     "aptDate": "2016-06-22 15:50",
-    "aptNotes": "This Goldfish has some weird spots in the belly"
+    "aptNotes": "ouch. bummer"
   },
   {
-    "petName": "Mitten",
-    "ownerName": "Hillary Goldwyn",
+    "aptTitle": "Coffee Break",
+    "participants": ["Aaron Pratt", "Hillary Goldwyn", "Jane Namath"],
     "aptDate": "2016-06-21 9:15",
-    "aptNotes": "Cat has excessive hairballs"
+    "aptNotes": "Gott get some coffee to keep going"
   }
 ]

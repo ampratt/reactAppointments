@@ -3,12 +3,12 @@ var React = require('react');
 var SearchAppointments = React.createClass({
 
 	handleSort: function(e) {
-		//e.target.id = id="petName"
+		//e.target.id = id="aptTitle"
 		this.props.onReOrder(e.target.id, this.props.orderDir);
 	}, //handleSort
 
 	handleOrder: function(e) {
-		//e.target.id = id="petName"
+		//e.target.id = id="aptTitle"
 		this.props.onReOrder(this.props.orderBy, e.target.id);
 	}, //handleSort
 
@@ -37,9 +37,9 @@ var SearchAppointments = React.createClass({
 			      			aria-expanded="false">Sort by: <span className="caret"></span></button>
 			          
 	                <ul className="dropdown-menu dropdown-menu-right">
-	                  <li><a href="#" id="petName" onClick={ this.handleSort }>Pet Name { (this.props.orderBy === 'petName') ? <span className="glyphicon glyphicon-ok"></span>: null }</a></li>
+	                  <li><a href="#" id="aptTitle" onClick={ this.handleSort }>Title { (this.props.orderBy === 'aptTitle') ? <span className="glyphicon glyphicon-ok"></span>: null }</a></li>
 	                  <li><a href="#" id="aptDate" onClick={ this.handleSort }>Date { (this.props.orderBy === 'aptDate') ? <span className="glyphicon glyphicon-ok"></span>: null }</a></li>
-	                  <li><a href="#" id="ownerName" onClick={ this.handleSort }>Owner { (this.props.orderBy === 'ownerName') ? <span className="glyphicon glyphicon-ok"></span>: null }</a></li>
+	                  <li><a href="#" id="participants" onClick={ this.handleSort }>Participants { (this.props.orderBy === 'participants') ? <span className="glyphicon glyphicon-ok"></span>: null }</a></li>
 	                  <li role="separator" className="divider"></li>
 	                  <li><a href="#" id="asc" onClick={ this.handleOrder }>Asc { (this.props.orderDir === 'asc') ? <span className="glyphicon glyphicon-ok"></span>: null }</a></li>
 	                  <li><a href="#" id="desc" onClick={ this.handleOrder }>Desc { (this.props.orderDir === 'desc') ? <span className="glyphicon glyphicon-ok"></span>: null }</a></li>
