@@ -12,3 +12,7 @@
 3. CD to the folder `cd reactAppointments`
 4. Run `> npm install` to install the project dependencies
 5. Run `> gulp` command to start the automation
+
+
+
+credit to course at [lynda.com](www.lynda.com) for original content idea
